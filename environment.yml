@@ -1,0 +1,23 @@
+name: moscas
+channels:
+  - conda-forge
+  - mosdef
+  - omnia
+dependencies:
+  - python=3.7
+  - pip
+  - matplotlib
+  - numpy
+  - parmed
+  - foyer
+  - freud
+  - fresnel
+  - gsd
+  - mbuild
+  - hoomd
+  - openbabel
+  - py3Dmol
+  - nodejs>=10
+  - jupyterlab
+  - mosdef_cassandra
+  - scipy
