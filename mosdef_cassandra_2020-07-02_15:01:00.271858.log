@@ -1,0 +1,53 @@
+*************************************************
+******* CASSANDRA FRAGLIB STANDARD OUTPUT *******
+*************************************************
+[1m
+********************** Cassandra Setup *********************
+[0m
+[1mCassandra location: [0m/home/nealeellyson/miniconda3/envs/moscas/bin/cassandra.exe
+[1mScanning input file[0m
+[1m  Number of species found: [0m2
+[1m  The MCF file number 1 is: [0mspecies1.mcf
+[1m  The MCF file number 2 is: [0mspecies2.mcf
+[1m    Species 1 has 0 fragments[0m
+[1m    Species 2 has 2 fragments[0m
+
+
+[1mCreating input MCF generation file for species 1 [0m
+[1mRunning Cassandra to generate MCF files[0m
+ Finished generating fragments
+ Exiting
+
+
+
+[1mCreating input MCF generation file for species 2 [0m
+[1mRunning Cassandra to generate MCF files[0m
+ Finished generating fragments
+ Exiting
+
+ Begin Cassandra simulation
+
+         Number of Trial moves   1100000
+                Accepted moves    362577
+
+ Cassandra simulation complete
+ Begin Cassandra simulation
+
+         Number of Trial moves   1100000
+                Accepted moves    361264
+
+ Cassandra simulation complete
+[1mGenerating fragment library species 2 fragment 1[0m
+[1mGenerating fragment library species 2 fragment 2[0m
+[1mRemoving temporary input file[0m
+[1mFinished[0m
+Note: The following floating-point exceptions are signalling: IEEE_DENORMAL
+Note: The following floating-point exceptions are signalling: IEEE_DENORMAL
+*************************************************
+*********** CASSANDRA STANDARD OUTPUT ***********
+*************************************************
+ Begin Cassandra simulation
+
+ openmp_flag =  T
+
+ Cassandra simulation complete
