@@ -21,8 +21,8 @@ Run info
 version: Cassandra Version 1.2.2 20200326
 inputfile: gcmc.inp
 name of run: gcmc.out
-date (mm/dd/yyyy): 07/02/2020
-time: 15:01:06
+date (mm/dd/yyyy): 07/08/2020
+time: 12:51:45
 machine: fry.boisestate.edu
 ********************************************************************************
 
@@ -50,7 +50,7 @@ gcmc
 2                                                                               
                                                                                 
 # VDW_Style                                                                     
-lj cut_tail 0.14999999602635702                                                 
+lj cut_tail 0.14999999602635702 Å                                              
                                                                                 
 # Charge_Style                                                                  
 none                                                                            
@@ -59,7 +59,7 @@ none
 lb                                                                              
                                                                                 
 # Seed_Info                                                                     
-72086131 27209361                                                               
+35408662 30884102                                                               
                                                                                 
 # Rcutoff_Low                                                                   
 0.5                                                                             
@@ -75,7 +75,6 @@ species2.mcf 500
 1                                                                               
 orthogonal                                                                      
 20.970999039709568 26.514000734314322 4.4999998807907104                        
-                                                                                
                                                                                 
 # Temperature_Info                                                              
 300.0                                                                           
@@ -106,11 +105,6 @@ none cbmc
                                                                                 
                                                                                 
 # Done_Probability_Info                                                         
-                                                                                
-# CBMC_Info                                                                     
-kappa_ins 10                                                                    
-kappa_dih 10                                                                    
-rcut_cbmc 6.0                                                                   
                                                                                 
 # Start_Type                                                                    
 read_config 1 0 box1.in.xyz                                                     
@@ -212,7 +206,7 @@ Molecule info
  Intra molecule scaling factors for species            1
   VDW 1-2 scaling factor       0.000
   VDW 1-3 scaling factor       0.000
-  VDW 1-4 scaling factor       0.000
+  VDW 1-4 scaling factor       1.000
   VDW 1-N scaling factor       1.000
  -------------------------------------------------------------------------------
 
@@ -254,7 +248,7 @@ Initial configuration for box 1 will be read from file
 
 Seed info
 ********************************************************************************
-The starting seeds are:     72086131     27209361
+The starting seeds are:     35408662     30884102
 ********************************************************************************
 
 Temperature
@@ -353,7 +347,7 @@ Compute total energy
 
  Energy components for box 1     kJ/mol-Extensive
  ---------------------------------------------------------------------
- Total system energy          152977900017183.062
+ Total system energy          254551436987856.125
  Intra molecular energy                     0.000
    Bond energy                              0.000
    Bond angle energy                        0.000
@@ -361,9 +355,9 @@ Compute total energy
    Improper angle energy                    0.000
    Intra molecule vdw                       0.000
    Intra molecule q                         0.000
- Inter molecular energy       152977900017183.062
+ Inter molecular energy       254551436987856.125
    Inter molecule vdw                       0.000
-   Long range correction      152977900017183.062
+   Long range correction      254551436987856.125
    Inter molecule q                         0.000
  ---------------------------------------------------------------------
 
@@ -372,947 +366,982 @@ Compute total energy
 Run simulation
 ********************************************************************************
       Step       Move   Mol Spc Box  Success  MaxWidth
-         4     delete         2   1        F             no mols
          7     delete         2   1        F             no mols
          8     delete         2   1        F             no mols
-        13     delete         2   1        F             no mols
-        20     delete         2   1        F             no mols
-        42     delete         2   1        F             no mols
-        47     delete         2   1        F             no mols
-        60     delete         2   1        F             no mols
-        64     delete         2   1        F             no mols
-        66     delete         2   1        F             no mols
-        76     delete         2   1        F             no mols
-        85     delete         2   1        F             no mols
-        96     delete         2   1        F             no mols
-       125     delete         2   1        F             no mols
+        14     delete         2   1        F             no mols
+        63     delete         2   1        F             no mols
+        81     delete         2   1        F             no mols
+       118     delete         2   1        F             no mols
+       121     delete         2   1        F             no mols
+       123     delete         2   1        F             no mols
+       124     delete         2   1        F             no mols
+       126     delete         2   1        F             no mols
        134     delete         2   1        F             no mols
-       161     delete         2   1        F             no mols
-       178     delete         2   1        F             no mols
-       205     delete         2   1        F             no mols
-       231     delete         2   1        F             no mols
+       166     delete         2   1        F             no mols
+       170     delete         2   1        F             no mols
+       176     delete         2   1        F             no mols
+       179     delete         2   1        F             no mols
+       183     delete         2   1        F             no mols
+       209     delete         2   1        F             no mols
+       210     delete         2   1        F             no mols
+       211     delete         2   1        F             no mols
+       224     delete         2   1        F             no mols
+       249     delete         2   1        F             no mols
+       255     delete         2   1        F             no mols
        275     delete         2   1        F             no mols
-       277     delete         2   1        F             no mols
-       308     delete         2   1        F             no mols
-       310     delete         2   1        F             no mols
-       339     delete         2   1        F             no mols
-       346     delete         2   1        F             no mols
-       350     delete         2   1        F             no mols
-       378     delete         2   1        F             no mols
-       421     delete         2   1        F             no mols
-       430     delete         2   1        F             no mols
-       438     delete         2   1        F             no mols
-       445     delete         2   1        F             no mols
-       453     delete         2   1        F             no mols
-       479     delete         2   1        F             no mols
-       495     delete         2   1        F             no mols
-       538     delete         2   1        F             no mols
-       545     delete         2   1        F             no mols
-       560     delete         2   1        F             no mols
-       567     delete         2   1        F             no mols
-       583     delete         2   1        F             no mols
-       591     delete         2   1        F             no mols
-       592     delete         2   1        F             no mols
-       607     delete         2   1        F             no mols
-       608     delete         2   1        F             no mols
-       614     delete         2   1        F             no mols
+       299     delete         2   1        F             no mols
+       315     delete         2   1        F             no mols
+       316     delete         2   1        F             no mols
+       344     delete         2   1        F             no mols
+       353     delete         2   1        F             no mols
+       366     delete         2   1        F             no mols
+       388     delete         2   1        F             no mols
+       396     delete         2   1        F             no mols
+       400     delete         2   1        F             no mols
+       418     delete         2   1        F             no mols
+       422     delete         2   1        F             no mols
+       447     delete         2   1        F             no mols
+       452     delete         2   1        F             no mols
+       461     delete         2   1        F             no mols
+       462     delete         2   1        F             no mols
+       467     delete         2   1        F             no mols
+       481     delete         2   1        F             no mols
+       483     delete         2   1        F             no mols
+       496     delete         2   1        F             no mols
+       512     delete         2   1        F             no mols
+       524     delete         2   1        F             no mols
+       525     delete         2   1        F             no mols
+       530     delete         2   1        F             no mols
+       532     delete         2   1        F             no mols
+       541     delete         2   1        F             no mols
+       556     delete         2   1        F             no mols
+       562     delete         2   1        F             no mols
+       565     delete         2   1        F             no mols
+       576     delete         2   1        F             no mols
+       582     delete         2   1        F             no mols
+       586     delete         2   1        F             no mols
+       593     delete         2   1        F             no mols
+       596     delete         2   1        F             no mols
+       597     delete         2   1        F             no mols
+       619     delete         2   1        F             no mols
        622     delete         2   1        F             no mols
-       627     delete         2   1        F             no mols
-       639     delete         2   1        F             no mols
-       643     delete         2   1        F             no mols
-       658     delete         2   1        F             no mols
-       665     delete         2   1        F             no mols
-       677     delete         2   1        F             no mols
-       679     delete         2   1        F             no mols
-       686     delete         2   1        F             no mols
+       629     delete         2   1        F             no mols
+       634     delete         2   1        F             no mols
+       641     delete         2   1        F             no mols
+       642     delete         2   1        F             no mols
+       647     delete         2   1        F             no mols
+       650     delete         2   1        F             no mols
+       670     delete         2   1        F             no mols
+       694     delete         2   1        F             no mols
+       700     delete         2   1        F             no mols
+       704     delete         2   1        F             no mols
+       714     delete         2   1        F             no mols
+       717     delete         2   1        F             no mols
+       749     delete         2   1        F             no mols
        765     delete         2   1        F             no mols
+       773     delete         2   1        F             no mols
+       776     delete         2   1        F             no mols
+       780     delete         2   1        F             no mols
+       784     delete         2   1        F             no mols
        787     delete         2   1        F             no mols
-       794     delete         2   1        F             no mols
-       811     delete         2   1        F             no mols
-       838     delete         2   1        F             no mols
-       840     delete         2   1        F             no mols
-       866     delete         2   1        F             no mols
-       871     delete         2   1        F             no mols
-       873     delete         2   1        F             no mols
-       886     delete         2   1        F             no mols
-       896     delete         2   1        F             no mols
-       901     delete         2   1        F             no mols
-       915     delete         2   1        F             no mols
-       928     delete         2   1        F             no mols
-       959     delete         2   1        F             no mols
-       967     delete         2   1        F             no mols
-       982     delete         2   1        F             no mols
-       992     delete         2   1        F             no mols
-       998     delete         2   1        F             no mols
-      1001     delete         2   1        F             no mols
-      1003     delete         2   1        F             no mols
-      1007     delete         2   1        F             no mols
-      1009     delete         2   1        F             no mols
-      1037     delete         2   1        F             no mols
-      1047     delete         2   1        F             no mols
+       790     delete         2   1        F             no mols
+       793     delete         2   1        F             no mols
+       800     delete         2   1        F             no mols
+       807     delete         2   1        F             no mols
+       810     delete         2   1        F             no mols
+       812     delete         2   1        F             no mols
+       816     delete         2   1        F             no mols
+       823     delete         2   1        F             no mols
+       824     delete         2   1        F             no mols
+       825     delete         2   1        F             no mols
+       832     delete         2   1        F             no mols
+       835     delete         2   1        F             no mols
+       853     delete         2   1        F             no mols
+       868     delete         2   1        F             no mols
+       872     delete         2   1        F             no mols
+       882     delete         2   1        F             no mols
+       934     delete         2   1        F             no mols
+       937     delete         2   1        F             no mols
+       956     delete         2   1        F             no mols
+       960     delete         2   1        F             no mols
+       961     delete         2   1        F             no mols
+       971     delete         2   1        F             no mols
+       979     delete         2   1        F             no mols
+       993     delete         2   1        F             no mols
+      1016     delete         2   1        F             no mols
+      1030     delete         2   1        F             no mols
+      1038     delete         2   1        F             no mols
       1048     delete         2   1        F             no mols
-      1050     delete         2   1        F             no mols
-      1067     delete         2   1        F             no mols
+      1055     delete         2   1        F             no mols
+      1059     delete         2   1        F             no mols
+      1068     delete         2   1        F             no mols
       1070     delete         2   1        F             no mols
-      1111     delete         2   1        F             no mols
-      1113     delete         2   1        F             no mols
-      1123     delete         2   1        F             no mols
-      1133     delete         2   1        F             no mols
-      1136     delete         2   1        F             no mols
+      1088     delete         2   1        F             no mols
+      1099     delete         2   1        F             no mols
+      1107     delete         2   1        F             no mols
+      1128     delete         2   1        F             no mols
+      1129     delete         2   1        F             no mols
       1142     delete         2   1        F             no mols
-      1159     delete         2   1        F             no mols
-      1179     delete         2   1        F             no mols
-      1181     delete         2   1        F             no mols
-      1189     delete         2   1        F             no mols
-      1211     delete         2   1        F             no mols
-      1212     delete         2   1        F             no mols
+      1145     delete         2   1        F             no mols
+      1152     delete         2   1        F             no mols
+      1162     delete         2   1        F             no mols
+      1164     delete         2   1        F             no mols
+      1171     delete         2   1        F             no mols
+      1175     delete         2   1        F             no mols
+      1205     delete         2   1        F             no mols
+      1215     delete         2   1        F             no mols
       1217     delete         2   1        F             no mols
-      1224     delete         2   1        F             no mols
-      1232     delete         2   1        F             no mols
-      1237     delete         2   1        F             no mols
-      1243     delete         2   1        F             no mols
+      1258     delete         2   1        F             no mols
+      1278     delete         2   1        F             no mols
+      1286     delete         2   1        F             no mols
       1287     delete         2   1        F             no mols
-      1312     delete         2   1        F             no mols
-      1322     delete         2   1        F             no mols
-      1342     delete         2   1        F             no mols
-      1352     delete         2   1        F             no mols
-      1359     delete         2   1        F             no mols
-      1363     delete         2   1        F             no mols
-      1385     delete         2   1        F             no mols
-      1389     delete         2   1        F             no mols
+      1307     delete         2   1        F             no mols
+      1317     delete         2   1        F             no mols
+      1326     delete         2   1        F             no mols
+      1338     delete         2   1        F             no mols
+      1360     delete         2   1        F             no mols
+      1391     delete         2   1        F             no mols
+      1395     delete         2   1        F             no mols
+      1397     delete         2   1        F             no mols
       1398     delete         2   1        F             no mols
+      1414     delete         2   1        F             no mols
       1418     delete         2   1        F             no mols
-      1422     delete         2   1        F             no mols
-      1423     delete         2   1        F             no mols
-      1430     delete         2   1        F             no mols
-      1473     delete         2   1        F             no mols
-      1476     delete         2   1        F             no mols
-      1497     delete         2   1        F             no mols
-      1523     delete         2   1        F             no mols
+      1426     delete         2   1        F             no mols
+      1439     delete         2   1        F             no mols
+      1440     delete         2   1        F             no mols
+      1444     delete         2   1        F             no mols
+      1446     delete         2   1        F             no mols
+      1452     delete         2   1        F             no mols
+      1488     delete         2   1        F             no mols
+      1492     delete         2   1        F             no mols
       1536     delete         2   1        F             no mols
-      1550     delete         2   1        F             no mols
-      1551     delete         2   1        F             no mols
-      1555     delete         2   1        F             no mols
-      1573     delete         2   1        F             no mols
-      1610     delete         2   1        F             no mols
-      1621     delete         2   1        F             no mols
-      1631     delete         2   1        F             no mols
-      1636     delete         2   1        F             no mols
-      1644     delete         2   1        F             no mols
-      1649     delete         2   1        F             no mols
-      1651     delete         2   1        F             no mols
-      1657     delete         2   1        F             no mols
-      1660     delete         2   1        F             no mols
-      1664     delete         2   1        F             no mols
-      1670     delete         2   1        F             no mols
-      1680     delete         2   1        F             no mols
-      1709     delete         2   1        F             no mols
+      1546     delete         2   1        F             no mols
+      1558     delete         2   1        F             no mols
+      1572     delete         2   1        F             no mols
+      1589     delete         2   1        F             no mols
+      1591     delete         2   1        F             no mols
+      1597     delete         2   1        F             no mols
+      1605     delete         2   1        F             no mols
+      1611     delete         2   1        F             no mols
+      1619     delete         2   1        F             no mols
+      1629     delete         2   1        F             no mols
+      1634     delete         2   1        F             no mols
+      1641     delete         2   1        F             no mols
       1712     delete         2   1        F             no mols
-      1738     delete         2   1        F             no mols
-      1740     delete         2   1        F             no mols
-      1755     delete         2   1        F             no mols
-      1766     delete         2   1        F             no mols
-      1767     delete         2   1        F             no mols
-      1774     delete         2   1        F             no mols
-      1786     delete         2   1        F             no mols
-      1795     delete         2   1        F             no mols
-      1796     delete         2   1        F             no mols
-      1824     delete         2   1        F             no mols
-      1838     delete         2   1        F             no mols
-      1845     delete         2   1        F             no mols
+      1715     delete         2   1        F             no mols
+      1719     delete         2   1        F             no mols
+      1721     delete         2   1        F             no mols
+      1730     delete         2   1        F             no mols
+      1741     delete         2   1        F             no mols
+      1748     delete         2   1        F             no mols
+      1761     delete         2   1        F             no mols
+      1762     delete         2   1        F             no mols
+      1772     delete         2   1        F             no mols
+      1779     delete         2   1        F             no mols
+      1780     delete         2   1        F             no mols
+      1800     delete         2   1        F             no mols
+      1802     delete         2   1        F             no mols
+      1812     delete         2   1        F             no mols
+      1818     delete         2   1        F             no mols
+      1823     delete         2   1        F             no mols
+      1836     delete         2   1        F             no mols
+      1837     delete         2   1        F             no mols
+      1842     delete         2   1        F             no mols
       1865     delete         2   1        F             no mols
+      1870     delete         2   1        F             no mols
       1880     delete         2   1        F             no mols
-      1883     delete         2   1        F             no mols
-      1885     delete         2   1        F             no mols
-      1890     delete         2   1        F             no mols
-      1892     delete         2   1        F             no mols
-      1905     delete         2   1        F             no mols
-      1910     delete         2   1        F             no mols
-      1918     delete         2   1        F             no mols
-      1945     delete         2   1        F             no mols
-      1946     delete         2   1        F             no mols
-      1951     delete         2   1        F             no mols
-      1958     delete         2   1        F             no mols
-      1969     delete         2   1        F             no mols
-      1971     delete         2   1        F             no mols
+      1903     delete         2   1        F             no mols
+      1906     delete         2   1        F             no mols
+      1913     delete         2   1        F             no mols
+      1925     delete         2   1        F             no mols
+      1930     delete         2   1        F             no mols
+      1942     delete         2   1        F             no mols
+      1947     delete         2   1        F             no mols
+      1972     delete         2   1        F             no mols
+      1976     delete         2   1        F             no mols
+      1977     delete         2   1        F             no mols
       1980     delete         2   1        F             no mols
-      1994     delete         2   1        F             no mols
-      2007     delete         2   1        F             no mols
+      1988     delete         2   1        F             no mols
+      1990     delete         2   1        F             no mols
+      2006     delete         2   1        F             no mols
+      2018     delete         2   1        F             no mols
+      2019     delete         2   1        F             no mols
       2020     delete         2   1        F             no mols
-      2026     delete         2   1        F             no mols
-      2027     delete         2   1        F             no mols
-      2031     delete         2   1        F             no mols
-      2038     delete         2   1        F             no mols
-      2066     delete         2   1        F             no mols
-      2073     delete         2   1        F             no mols
-      2075     delete         2   1        F             no mols
-      2082     delete         2   1        F             no mols
-      2091     delete         2   1        F             no mols
-      2111     delete         2   1        F             no mols
-      2117     delete         2   1        F             no mols
-      2122     delete         2   1        F             no mols
-      2126     delete         2   1        F             no mols
-      2135     delete         2   1        F             no mols
-      2152     delete         2   1        F             no mols
-      2184     delete         2   1        F             no mols
-      2195     delete         2   1        F             no mols
-      2209     delete         2   1        F             no mols
-      2211     delete         2   1        F             no mols
-      2212     delete         2   1        F             no mols
-      2232     delete         2   1        F             no mols
-      2254     delete         2   1        F             no mols
-      2264     delete         2   1        F             no mols
-      2289     delete         2   1        F             no mols
-      2291     delete         2   1        F             no mols
-      2294     delete         2   1        F             no mols
-      2297     delete         2   1        F             no mols
-      2300     delete         2   1        F             no mols
-      2320     delete         2   1        F             no mols
-      2330     delete         2   1        F             no mols
-      2342     delete         2   1        F             no mols
-      2347     delete         2   1        F             no mols
+      2030     delete         2   1        F             no mols
+      2032     delete         2   1        F             no mols
+      2034     delete         2   1        F             no mols
+      2045     delete         2   1        F             no mols
+      2047     delete         2   1        F             no mols
+      2053     delete         2   1        F             no mols
+      2055     delete         2   1        F             no mols
+      2072     delete         2   1        F             no mols
+      2079     delete         2   1        F             no mols
+      2087     delete         2   1        F             no mols
+      2097     delete         2   1        F             no mols
+      2124     delete         2   1        F             no mols
+      2153     delete         2   1        F             no mols
+      2162     delete         2   1        F             no mols
+      2168     delete         2   1        F             no mols
+      2206     delete         2   1        F             no mols
+      2208     delete         2   1        F             no mols
+      2268     delete         2   1        F             no mols
+      2285     delete         2   1        F             no mols
+      2293     delete         2   1        F             no mols
+      2311     delete         2   1        F             no mols
+      2312     delete         2   1        F             no mols
+      2332     delete         2   1        F             no mols
+      2346     delete         2   1        F             no mols
+      2349     delete         2   1        F             no mols
       2357     delete         2   1        F             no mols
-      2377     delete         2   1        F             no mols
-      2387     delete         2   1        F             no mols
-      2414     delete         2   1        F             no mols
-      2416     delete         2   1        F             no mols
-      2425     delete         2   1        F             no mols
-      2436     delete         2   1        F             no mols
-      2440     delete         2   1        F             no mols
-      2444     delete         2   1        F             no mols
-      2465     delete         2   1        F             no mols
-      2489     delete         2   1        F             no mols
-      2491     delete         2   1        F             no mols
-      2496     delete         2   1        F             no mols
-      2518     delete         2   1        F             no mols
-      2527     delete         2   1        F             no mols
-      2535     delete         2   1        F             no mols
-      2547     delete         2   1        F             no mols
-      2558     delete         2   1        F             no mols
-      2559     delete         2   1        F             no mols
+      2386     delete         2   1        F             no mols
+      2411     delete         2   1        F             no mols
+      2418     delete         2   1        F             no mols
+      2422     delete         2   1        F             no mols
+      2451     delete         2   1        F             no mols
+      2460     delete         2   1        F             no mols
+      2461     delete         2   1        F             no mols
+      2485     delete         2   1        F             no mols
+      2490     delete         2   1        F             no mols
+      2513     delete         2   1        F             no mols
+      2530     delete         2   1        F             no mols
+      2561     delete         2   1        F             no mols
+      2568     delete         2   1        F             no mols
       2571     delete         2   1        F             no mols
-      2580     delete         2   1        F             no mols
-      2589     delete         2   1        F             no mols
-      2601     delete         2   1        F             no mols
-      2614     delete         2   1        F             no mols
-      2648     delete         2   1        F             no mols
-      2661     delete         2   1        F             no mols
-      2686     delete         2   1        F             no mols
-      2699     delete         2   1        F             no mols
+      2576     delete         2   1        F             no mols
+      2600     delete         2   1        F             no mols
+      2622     delete         2   1        F             no mols
+      2624     delete         2   1        F             no mols
+      2626     delete         2   1        F             no mols
+      2651     delete         2   1        F             no mols
+      2665     delete         2   1        F             no mols
+      2668     delete         2   1        F             no mols
+      2670     delete         2   1        F             no mols
+      2671     delete         2   1        F             no mols
+      2685     delete         2   1        F             no mols
       2701     delete         2   1        F             no mols
-      2716     delete         2   1        F             no mols
-      2727     delete         2   1        F             no mols
-      2743     delete         2   1        F             no mols
-      2746     delete         2   1        F             no mols
-      2748     delete         2   1        F             no mols
-      2766     delete         2   1        F             no mols
-      2777     delete         2   1        F             no mols
+      2718     delete         2   1        F             no mols
+      2723     delete         2   1        F             no mols
+      2726     delete         2   1        F             no mols
+      2739     delete         2   1        F             no mols
+      2756     delete         2   1        F             no mols
+      2763     delete         2   1        F             no mols
+      2767     delete         2   1        F             no mols
+      2778     delete         2   1        F             no mols
       2787     delete         2   1        F             no mols
-      2808     delete         2   1        F             no mols
-      2811     delete         2   1        F             no mols
-      2816     delete         2   1        F             no mols
-      2833     delete         2   1        F             no mols
-      2838     delete         2   1        F             no mols
-      2843     delete         2   1        F             no mols
-      2850     delete         2   1        F             no mols
-      2855     delete         2   1        F             no mols
-      2861     delete         2   1        F             no mols
-      2871     delete         2   1        F             no mols
-      2874     delete         2   1        F             no mols
-      2880     delete         2   1        F             no mols
-      2889     delete         2   1        F             no mols
+      2797     delete         2   1        F             no mols
+      2802     delete         2   1        F             no mols
+      2812     delete         2   1        F             no mols
+      2823     delete         2   1        F             no mols
+      2830     delete         2   1        F             no mols
+      2851     delete         2   1        F             no mols
+      2857     delete         2   1        F             no mols
+      2883     delete         2   1        F             no mols
+      2887     delete         2   1        F             no mols
       2894     delete         2   1        F             no mols
-      2904     delete         2   1        F             no mols
-      2905     delete         2   1        F             no mols
-      2913     delete         2   1        F             no mols
-      2920     delete         2   1        F             no mols
-      2923     delete         2   1        F             no mols
-      2930     delete         2   1        F             no mols
-      2931     delete         2   1        F             no mols
-      2946     delete         2   1        F             no mols
-      2948     delete         2   1        F             no mols
-      2952     delete         2   1        F             no mols
-      2978     delete         2   1        F             no mols
+      2912     delete         2   1        F             no mols
+      2916     delete         2   1        F             no mols
+      2925     delete         2   1        F             no mols
+      2926     delete         2   1        F             no mols
+      2928     delete         2   1        F             no mols
+      2932     delete         2   1        F             no mols
+      2935     delete         2   1        F             no mols
+      2937     delete         2   1        F             no mols
+      2956     delete         2   1        F             no mols
+      2971     delete         2   1        F             no mols
       2989     delete         2   1        F             no mols
-      2996     delete         2   1        F             no mols
-      3009     delete         2   1        F             no mols
-      3082     delete         2   1        F             no mols
-      3087     delete         2   1        F             no mols
-      3097     delete         2   1        F             no mols
-      3107     delete         2   1        F             no mols
-      3114     delete         2   1        F             no mols
-      3125     delete         2   1        F             no mols
-      3129     delete         2   1        F             no mols
-      3133     delete         2   1        F             no mols
+      2999     delete         2   1        F             no mols
+      3002     delete         2   1        F             no mols
+      3015     delete         2   1        F             no mols
+      3055     delete         2   1        F             no mols
+      3057     delete         2   1        F             no mols
+      3063     delete         2   1        F             no mols
+      3077     delete         2   1        F             no mols
+      3085     delete         2   1        F             no mols
+      3088     delete         2   1        F             no mols
+      3089     delete         2   1        F             no mols
+      3093     delete         2   1        F             no mols
+      3096     delete         2   1        F             no mols
+      3106     delete         2   1        F             no mols
+      3123     delete         2   1        F             no mols
+      3132     delete         2   1        F             no mols
       3135     delete         2   1        F             no mols
-      3138     delete         2   1        F             no mols
-      3144     delete         2   1        F             no mols
-      3158     delete         2   1        F             no mols
-      3161     delete         2   1        F             no mols
+      3142     delete         2   1        F             no mols
+      3149     delete         2   1        F             no mols
+      3154     delete         2   1        F             no mols
+      3159     delete         2   1        F             no mols
+      3162     delete         2   1        F             no mols
       3172     delete         2   1        F             no mols
-      3173     delete         2   1        F             no mols
-      3241     delete         2   1        F             no mols
-      3246     delete         2   1        F             no mols
-      3271     delete         2   1        F             no mols
-      3281     delete         2   1        F             no mols
-      3285     delete         2   1        F             no mols
-      3288     delete         2   1        F             no mols
-      3290     delete         2   1        F             no mols
-      3291     delete         2   1        F             no mols
-      3295     delete         2   1        F             no mols
-      3306     delete         2   1        F             no mols
-      3308     delete         2   1        F             no mols
-      3318     delete         2   1        F             no mols
-      3351     delete         2   1        F             no mols
-      3360     delete         2   1        F             no mols
-      3372     delete         2   1        F             no mols
-      3384     delete         2   1        F             no mols
-      3394     delete         2   1        F             no mols
+      3174     delete         2   1        F             no mols
+      3179     delete         2   1        F             no mols
+      3183     delete         2   1        F             no mols
+      3185     delete         2   1        F             no mols
+      3213     delete         2   1        F             no mols
+      3214     delete         2   1        F             no mols
+      3217     delete         2   1        F             no mols
+      3223     delete         2   1        F             no mols
+      3229     delete         2   1        F             no mols
+      3232     delete         2   1        F             no mols
+      3236     delete         2   1        F             no mols
+      3237     delete         2   1        F             no mols
+      3264     delete         2   1        F             no mols
+      3296     delete         2   1        F             no mols
+      3301     delete         2   1        F             no mols
+      3303     delete         2   1        F             no mols
+      3305     delete         2   1        F             no mols
+      3320     delete         2   1        F             no mols
+      3321     delete         2   1        F             no mols
+      3341     delete         2   1        F             no mols
+      3346     delete         2   1        F             no mols
+      3356     delete         2   1        F             no mols
+      3361     delete         2   1        F             no mols
+      3368     delete         2   1        F             no mols
+      3375     delete         2   1        F             no mols
       3401     delete         2   1        F             no mols
-      3414     delete         2   1        F             no mols
-      3434     delete         2   1        F             no mols
-      3444     delete         2   1        F             no mols
-      3475     delete         2   1        F             no mols
-      3478     delete         2   1        F             no mols
-      3485     delete         2   1        F             no mols
-      3486     delete         2   1        F             no mols
-      3514     delete         2   1        F             no mols
-      3517     delete         2   1        F             no mols
-      3525     delete         2   1        F             no mols
-      3528     delete         2   1        F             no mols
-      3534     delete         2   1        F             no mols
+      3409     delete         2   1        F             no mols
+      3416     delete         2   1        F             no mols
+      3418     delete         2   1        F             no mols
+      3419     delete         2   1        F             no mols
+      3426     delete         2   1        F             no mols
+      3453     delete         2   1        F             no mols
+      3461     delete         2   1        F             no mols
+      3498     delete         2   1        F             no mols
+      3500     delete         2   1        F             no mols
+      3509     delete         2   1        F             no mols
+      3510     delete         2   1        F             no mols
+      3515     delete         2   1        F             no mols
+      3516     delete         2   1        F             no mols
       3536     delete         2   1        F             no mols
-      3541     delete         2   1        F             no mols
-      3542     delete         2   1        F             no mols
-      3563     delete         2   1        F             no mols
-      3564     delete         2   1        F             no mols
-      3566     delete         2   1        F             no mols
-      3571     delete         2   1        F             no mols
-      3574     delete         2   1        F             no mols
-      3617     delete         2   1        F             no mols
-      3624     delete         2   1        F             no mols
-      3673     delete         2   1        F             no mols
-      3674     delete         2   1        F             no mols
-      3678     delete         2   1        F             no mols
-      3691     delete         2   1        F             no mols
-      3695     delete         2   1        F             no mols
-      3717     delete         2   1        F             no mols
-      3724     delete         2   1        F             no mols
-      3732     delete         2   1        F             no mols
-      3741     delete         2   1        F             no mols
-      3751     delete         2   1        F             no mols
+      3567     delete         2   1        F             no mols
+      3596     delete         2   1        F             no mols
+      3598     delete         2   1        F             no mols
+      3610     delete         2   1        F             no mols
+      3613     delete         2   1        F             no mols
+      3623     delete         2   1        F             no mols
+      3636     delete         2   1        F             no mols
+      3646     delete         2   1        F             no mols
+      3648     delete         2   1        F             no mols
+      3656     delete         2   1        F             no mols
+      3661     delete         2   1        F             no mols
+      3682     delete         2   1        F             no mols
+      3683     delete         2   1        F             no mols
+      3686     delete         2   1        F             no mols
+      3713     delete         2   1        F             no mols
+      3714     delete         2   1        F             no mols
+      3727     delete         2   1        F             no mols
+      3744     delete         2   1        F             no mols
       3755     delete         2   1        F             no mols
-      3763     delete         2   1        F             no mols
-      3770     delete         2   1        F             no mols
-      3778     delete         2   1        F             no mols
-      3790     delete         2   1        F             no mols
-      3794     delete         2   1        F             no mols
-      3806     delete         2   1        F             no mols
-      3829     delete         2   1        F             no mols
-      3831     delete         2   1        F             no mols
-      3841     delete         2   1        F             no mols
-      3866     delete         2   1        F             no mols
-      3867     delete         2   1        F             no mols
-      3886     delete         2   1        F             no mols
-      3894     delete         2   1        F             no mols
-      3904     delete         2   1        F             no mols
-      3922     delete         2   1        F             no mols
-      3942     delete         2   1        F             no mols
-      3956     delete         2   1        F             no mols
-      3958     delete         2   1        F             no mols
+      3784     delete         2   1        F             no mols
+      3786     delete         2   1        F             no mols
+      3791     delete         2   1        F             no mols
+      3798     delete         2   1        F             no mols
+      3800     delete         2   1        F             no mols
+      3809     delete         2   1        F             no mols
+      3811     delete         2   1        F             no mols
+      3815     delete         2   1        F             no mols
+      3816     delete         2   1        F             no mols
+      3827     delete         2   1        F             no mols
+      3832     delete         2   1        F             no mols
+      3845     delete         2   1        F             no mols
+      3856     delete         2   1        F             no mols
+      3857     delete         2   1        F             no mols
+      3859     delete         2   1        F             no mols
+      3861     delete         2   1        F             no mols
+      3865     delete         2   1        F             no mols
+      3869     delete         2   1        F             no mols
+      3872     delete         2   1        F             no mols
+      3876     delete         2   1        F             no mols
+      3877     delete         2   1        F             no mols
+      3892     delete         2   1        F             no mols
+      3897     delete         2   1        F             no mols
+      3898     delete         2   1        F             no mols
+      3900     delete         2   1        F             no mols
+      3906     delete         2   1        F             no mols
+      3920     delete         2   1        F             no mols
+      3933     delete         2   1        F             no mols
+      3934     delete         2   1        F             no mols
       3959     delete         2   1        F             no mols
-      3960     delete         2   1        F             no mols
-      3983     delete         2   1        F             no mols
-      3985     delete         2   1        F             no mols
-      4009     delete         2   1        F             no mols
-      4011     delete         2   1        F             no mols
-      4017     delete         2   1        F             no mols
-      4019     delete         2   1        F             no mols
-      4024     delete         2   1        F             no mols
-      4026     delete         2   1        F             no mols
-      4080     delete         2   1        F             no mols
-      4089     delete         2   1        F             no mols
-      4093     delete         2   1        F             no mols
-      4115     delete         2   1        F             no mols
-      4118     delete         2   1        F             no mols
-      4128     delete         2   1        F             no mols
-      4132     delete         2   1        F             no mols
-      4145     delete         2   1        F             no mols
-      4154     delete         2   1        F             no mols
-      4164     delete         2   1        F             no mols
-      4175     delete         2   1        F             no mols
-      4187     delete         2   1        F             no mols
+      4008     delete         2   1        F             no mols
+      4013     delete         2   1        F             no mols
+      4015     delete         2   1        F             no mols
+      4033     delete         2   1        F             no mols
+      4039     delete         2   1        F             no mols
+      4052     delete         2   1        F             no mols
+      4075     delete         2   1        F             no mols
+      4088     delete         2   1        F             no mols
+      4090     delete         2   1        F             no mols
+      4097     delete         2   1        F             no mols
+      4098     delete         2   1        F             no mols
+      4120     delete         2   1        F             no mols
+      4138     delete         2   1        F             no mols
+      4150     delete         2   1        F             no mols
+      4166     delete         2   1        F             no mols
+      4192     delete         2   1        F             no mols
+      4193     delete         2   1        F             no mols
       4199     delete         2   1        F             no mols
       4201     delete         2   1        F             no mols
-      4212     delete         2   1        F             no mols
-      4223     delete         2   1        F             no mols
-      4228     delete         2   1        F             no mols
-      4242     delete         2   1        F             no mols
-      4251     delete         2   1        F             no mols
-      4258     delete         2   1        F             no mols
-      4276     delete         2   1        F             no mols
-      4287     delete         2   1        F             no mols
-      4309     delete         2   1        F             no mols
-      4310     delete         2   1        F             no mols
-      4312     delete         2   1        F             no mols
-      4319     delete         2   1        F             no mols
-      4326     delete         2   1        F             no mols
-      4340     delete         2   1        F             no mols
-      4345     delete         2   1        F             no mols
-      4363     delete         2   1        F             no mols
-      4364     delete         2   1        F             no mols
-      4382     delete         2   1        F             no mols
-      4387     delete         2   1        F             no mols
-      4392     delete         2   1        F             no mols
-      4395     delete         2   1        F             no mols
-      4415     delete         2   1        F             no mols
-      4418     delete         2   1        F             no mols
-      4419     delete         2   1        F             no mols
+      4211     delete         2   1        F             no mols
+      4214     delete         2   1        F             no mols
+      4227     delete         2   1        F             no mols
+      4243     delete         2   1        F             no mols
+      4246     delete         2   1        F             no mols
+      4255     delete         2   1        F             no mols
+      4270     delete         2   1        F             no mols
+      4278     delete         2   1        F             no mols
+      4285     delete         2   1        F             no mols
+      4332     delete         2   1        F             no mols
+      4356     delete         2   1        F             no mols
+      4361     delete         2   1        F             no mols
+      4390     delete         2   1        F             no mols
+      4396     delete         2   1        F             no mols
+      4401     delete         2   1        F             no mols
+      4413     delete         2   1        F             no mols
+      4423     delete         2   1        F             no mols
+      4428     delete         2   1        F             no mols
+      4436     delete         2   1        F             no mols
+      4438     delete         2   1        F             no mols
       4444     delete         2   1        F             no mols
-      4459     delete         2   1        F             no mols
-      4469     delete         2   1        F             no mols
-      4491     delete         2   1        F             no mols
-      4498     delete         2   1        F             no mols
-      4522     delete         2   1        F             no mols
-      4528     delete         2   1        F             no mols
-      4532     delete         2   1        F             no mols
-      4552     delete         2   1        F             no mols
-      4567     delete         2   1        F             no mols
-      4578     delete         2   1        F             no mols
-      4584     delete         2   1        F             no mols
-      4603     delete         2   1        F             no mols
-      4614     delete         2   1        F             no mols
-      4626     delete         2   1        F             no mols
-      4629     delete         2   1        F             no mols
-      4639     delete         2   1        F             no mols
+      4445     delete         2   1        F             no mols
+      4456     delete         2   1        F             no mols
+      4461     delete         2   1        F             no mols
+      4468     delete         2   1        F             no mols
+      4470     delete         2   1        F             no mols
+      4482     delete         2   1        F             no mols
+      4494     delete         2   1        F             no mols
+      4512     delete         2   1        F             no mols
+      4513     delete         2   1        F             no mols
+      4514     delete         2   1        F             no mols
+      4526     delete         2   1        F             no mols
+      4531     delete         2   1        F             no mols
+      4568     delete         2   1        F             no mols
+      4580     delete         2   1        F             no mols
+      4587     delete         2   1        F             no mols
+      4610     delete         2   1        F             no mols
+      4611     delete         2   1        F             no mols
+      4625     delete         2   1        F             no mols
       4646     delete         2   1        F             no mols
-      4659     delete         2   1        F             no mols
-      4677     delete         2   1        F             no mols
-      4688     delete         2   1        F             no mols
-      4706     delete         2   1        F             no mols
-      4738     delete         2   1        F             no mols
-      4756     delete         2   1        F             no mols
-      4782     delete         2   1        F             no mols
-      4786     delete         2   1        F             no mols
-      4789     delete         2   1        F             no mols
-      4797     delete         2   1        F             no mols
-      4799     delete         2   1        F             no mols
-      4810     delete         2   1        F             no mols
-      4826     delete         2   1        F             no mols
-      4827     delete         2   1        F             no mols
-      4832     delete         2   1        F             no mols
-      4833     delete         2   1        F             no mols
+      4661     delete         2   1        F             no mols
+      4669     delete         2   1        F             no mols
+      4670     delete         2   1        F             no mols
+      4689     delete         2   1        F             no mols
+      4700     delete         2   1        F             no mols
+      4713     delete         2   1        F             no mols
+      4715     delete         2   1        F             no mols
+      4733     delete         2   1        F             no mols
+      4751     delete         2   1        F             no mols
+      4752     delete         2   1        F             no mols
+      4754     delete         2   1        F             no mols
+      4772     delete         2   1        F             no mols
+      4775     delete         2   1        F             no mols
+      4778     delete         2   1        F             no mols
+      4785     delete         2   1        F             no mols
+      4787     delete         2   1        F             no mols
+      4800     delete         2   1        F             no mols
+      4816     delete         2   1        F             no mols
+      4828     delete         2   1        F             no mols
+      4843     delete         2   1        F             no mols
+      4847     delete         2   1        F             no mols
+      4866     delete         2   1        F             no mols
       4871     delete         2   1        F             no mols
-      4897     delete         2   1        F             no mols
-      4909     delete         2   1        F             no mols
-      4911     delete         2   1        F             no mols
-      4931     delete         2   1        F             no mols
-      4941     delete         2   1        F             no mols
-      4951     delete         2   1        F             no mols
-      4952     delete         2   1        F             no mols
-      4957     delete         2   1        F             no mols
-      4958     delete         2   1        F             no mols
-      4964     delete         2   1        F             no mols
-      4974     delete         2   1        F             no mols
-      4995     delete         2   1        F             no mols
-      5011     delete         2   1        F             no mols
-      5027     delete         2   1        F             no mols
-      5033     delete         2   1        F             no mols
-      5038     delete         2   1        F             no mols
+      4882     delete         2   1        F             no mols
+      4899     delete         2   1        F             no mols
+      4902     delete         2   1        F             no mols
+      4910     delete         2   1        F             no mols
+      4933     delete         2   1        F             no mols
+      4935     delete         2   1        F             no mols
+      4936     delete         2   1        F             no mols
+      4940     delete         2   1        F             no mols
+      4942     delete         2   1        F             no mols
+      4962     delete         2   1        F             no mols
+      4973     delete         2   1        F             no mols
+      4977     delete         2   1        F             no mols
+      4980     delete         2   1        F             no mols
+      4984     delete         2   1        F             no mols
+      4994     delete         2   1        F             no mols
+      4998     delete         2   1        F             no mols
+      5014     delete         2   1        F             no mols
+      5015     delete         2   1        F             no mols
+      5017     delete         2   1        F             no mols
+      5024     delete         2   1        F             no mols
+      5039     delete         2   1        F             no mols
       5045     delete         2   1        F             no mols
-      5048     delete         2   1        F             no mols
-      5064     delete         2   1        F             no mols
-      5074     delete         2   1        F             no mols
-      5078     delete         2   1        F             no mols
-      5082     delete         2   1        F             no mols
-      5094     delete         2   1        F             no mols
-      5096     delete         2   1        F             no mols
-      5105     delete         2   1        F             no mols
-      5117     delete         2   1        F             no mols
-      5118     delete         2   1        F             no mols
+      5050     delete         2   1        F             no mols
+      5077     delete         2   1        F             no mols
+      5081     delete         2   1        F             no mols
+      5088     delete         2   1        F             no mols
+      5090     delete         2   1        F             no mols
+      5110     delete         2   1        F             no mols
+      5115     delete         2   1        F             no mols
+      5116     delete         2   1        F             no mols
+      5126     delete         2   1        F             no mols
+      5129     delete         2   1        F             no mols
+      5133     delete         2   1        F             no mols
+      5136     delete         2   1        F             no mols
       5138     delete         2   1        F             no mols
-      5141     delete         2   1        F             no mols
-      5166     delete         2   1        F             no mols
-      5200     delete         2   1        F             no mols
-      5204     delete         2   1        F             no mols
-      5209     delete         2   1        F             no mols
-      5213     delete         2   1        F             no mols
-      5216     delete         2   1        F             no mols
-      5218     delete         2   1        F             no mols
-      5219     delete         2   1        F             no mols
-      5223     delete         2   1        F             no mols
-      5232     delete         2   1        F             no mols
+      5143     delete         2   1        F             no mols
+      5154     delete         2   1        F             no mols
+      5168     delete         2   1        F             no mols
+      5177     delete         2   1        F             no mols
+      5183     delete         2   1        F             no mols
+      5234     delete         2   1        F             no mols
+      5238     delete         2   1        F             no mols
+      5241     delete         2   1        F             no mols
       5243     delete         2   1        F             no mols
-      5248     delete         2   1        F             no mols
-      5254     delete         2   1        F             no mols
-      5255     delete         2   1        F             no mols
-      5268     delete         2   1        F             no mols
-      5273     delete         2   1        F             no mols
-      5281     delete         2   1        F             no mols
-      5300     delete         2   1        F             no mols
-      5301     delete         2   1        F             no mols
-      5308     delete         2   1        F             no mols
-      5317     delete         2   1        F             no mols
-      5321     delete         2   1        F             no mols
-      5323     delete         2   1        F             no mols
-      5329     delete         2   1        F             no mols
-      5347     delete         2   1        F             no mols
-      5361     delete         2   1        F             no mols
-      5376     delete         2   1        F             no mols
-      5378     delete         2   1        F             no mols
-      5390     delete         2   1        F             no mols
-      5396     delete         2   1        F             no mols
-      5405     delete         2   1        F             no mols
-      5420     delete         2   1        F             no mols
-      5422     delete         2   1        F             no mols
-      5450     delete         2   1        F             no mols
-      5485     delete         2   1        F             no mols
-      5512     delete         2   1        F             no mols
+      5246     delete         2   1        F             no mols
+      5271     delete         2   1        F             no mols
+      5285     delete         2   1        F             no mols
+      5298     delete         2   1        F             no mols
+      5313     delete         2   1        F             no mols
+      5316     delete         2   1        F             no mols
+      5322     delete         2   1        F             no mols
+      5328     delete         2   1        F             no mols
+      5334     delete         2   1        F             no mols
+      5335     delete         2   1        F             no mols
+      5336     delete         2   1        F             no mols
+      5344     delete         2   1        F             no mols
+      5351     delete         2   1        F             no mols
+      5352     delete         2   1        F             no mols
+      5363     delete         2   1        F             no mols
+      5370     delete         2   1        F             no mols
+      5373     delete         2   1        F             no mols
+      5377     delete         2   1        F             no mols
+      5386     delete         2   1        F             no mols
+      5395     delete         2   1        F             no mols
+      5407     delete         2   1        F             no mols
+      5409     delete         2   1        F             no mols
+      5410     delete         2   1        F             no mols
+      5431     delete         2   1        F             no mols
+      5433     delete         2   1        F             no mols
+      5479     delete         2   1        F             no mols
+      5496     delete         2   1        F             no mols
+      5506     delete         2   1        F             no mols
       5513     delete         2   1        F             no mols
-      5517     delete         2   1        F             no mols
+      5515     delete         2   1        F             no mols
       5533     delete         2   1        F             no mols
-      5536     delete         2   1        F             no mols
-      5543     delete         2   1        F             no mols
-      5545     delete         2   1        F             no mols
-      5572     delete         2   1        F             no mols
-      5585     delete         2   1        F             no mols
-      5596     delete         2   1        F             no mols
-      5597     delete         2   1        F             no mols
-      5617     delete         2   1        F             no mols
-      5631     delete         2   1        F             no mols
-      5636     delete         2   1        F             no mols
-      5638     delete         2   1        F             no mols
+      5566     delete         2   1        F             no mols
+      5584     delete         2   1        F             no mols
+      5587     delete         2   1        F             no mols
+      5607     delete         2   1        F             no mols
+      5641     delete         2   1        F             no mols
       5644     delete         2   1        F             no mols
-      5651     delete         2   1        F             no mols
-      5653     delete         2   1        F             no mols
-      5676     delete         2   1        F             no mols
-      5693     delete         2   1        F             no mols
-      5699     delete         2   1        F             no mols
-      5702     delete         2   1        F             no mols
-      5708     delete         2   1        F             no mols
-      5716     delete         2   1        F             no mols
-      5720     delete         2   1        F             no mols
-      5721     delete         2   1        F             no mols
-      5735     delete         2   1        F             no mols
-      5736     delete         2   1        F             no mols
+      5657     delete         2   1        F             no mols
+      5669     delete         2   1        F             no mols
+      5680     delete         2   1        F             no mols
+      5686     delete         2   1        F             no mols
+      5688     delete         2   1        F             no mols
+      5689     delete         2   1        F             no mols
+      5698     delete         2   1        F             no mols
+      5706     delete         2   1        F             no mols
+      5717     delete         2   1        F             no mols
+      5724     delete         2   1        F             no mols
       5737     delete         2   1        F             no mols
-      5744     delete         2   1        F             no mols
-      5761     delete         2   1        F             no mols
+      5746     delete         2   1        F             no mols
+      5757     delete         2   1        F             no mols
       5770     delete         2   1        F             no mols
-      5784     delete         2   1        F             no mols
-      5787     delete         2   1        F             no mols
-      5811     delete         2   1        F             no mols
-      5814     delete         2   1        F             no mols
-      5815     delete         2   1        F             no mols
-      5820     delete         2   1        F             no mols
-      5827     delete         2   1        F             no mols
+      5777     delete         2   1        F             no mols
+      5796     delete         2   1        F             no mols
+      5799     delete         2   1        F             no mols
+      5806     delete         2   1        F             no mols
+      5812     delete         2   1        F             no mols
+      5813     delete         2   1        F             no mols
+      5818     delete         2   1        F             no mols
+      5822     delete         2   1        F             no mols
+      5845     delete         2   1        F             no mols
       5854     delete         2   1        F             no mols
-      5855     delete         2   1        F             no mols
-      5866     delete         2   1        F             no mols
-      5874     delete         2   1        F             no mols
-      5875     delete         2   1        F             no mols
-      5888     delete         2   1        F             no mols
-      5900     delete         2   1        F             no mols
-      5901     delete         2   1        F             no mols
-      5904     delete         2   1        F             no mols
-      5913     delete         2   1        F             no mols
-      5926     delete         2   1        F             no mols
-      5927     delete         2   1        F             no mols
-      5931     delete         2   1        F             no mols
-      5979     delete         2   1        F             no mols
-      5984     delete         2   1        F             no mols
-      5986     delete         2   1        F             no mols
+      5859     delete         2   1        F             no mols
+      5864     delete         2   1        F             no mols
+      5890     delete         2   1        F             no mols
+      5907     delete         2   1        F             no mols
+      5911     delete         2   1        F             no mols
+      5924     delete         2   1        F             no mols
+      5940     delete         2   1        F             no mols
+      5953     delete         2   1        F             no mols
+      5954     delete         2   1        F             no mols
+      5957     delete         2   1        F             no mols
+      5975     delete         2   1        F             no mols
+      5987     delete         2   1        F             no mols
+      5991     delete         2   1        F             no mols
       5992     delete         2   1        F             no mols
+      5997     delete         2   1        F             no mols
+      5999     delete         2   1        F             no mols
+      6005     delete         2   1        F             no mols
+      6013     delete         2   1        F             no mols
+      6015     delete         2   1        F             no mols
       6016     delete         2   1        F             no mols
-      6044     delete         2   1        F             no mols
-      6045     delete         2   1        F             no mols
-      6067     delete         2   1        F             no mols
-      6076     delete         2   1        F             no mols
-      6077     delete         2   1        F             no mols
-      6101     delete         2   1        F             no mols
-      6103     delete         2   1        F             no mols
-      6107     delete         2   1        F             no mols
-      6110     delete         2   1        F             no mols
-      6119     delete         2   1        F             no mols
-      6123     delete         2   1        F             no mols
-      6126     delete         2   1        F             no mols
+      6020     delete         2   1        F             no mols
+      6024     delete         2   1        F             no mols
+      6042     delete         2   1        F             no mols
+      6058     delete         2   1        F             no mols
+      6060     delete         2   1        F             no mols
+      6069     delete         2   1        F             no mols
+      6072     delete         2   1        F             no mols
+      6084     delete         2   1        F             no mols
+      6102     delete         2   1        F             no mols
+      6109     delete         2   1        F             no mols
+      6118     delete         2   1        F             no mols
       6133     delete         2   1        F             no mols
-      6139     delete         2   1        F             no mols
-      6141     delete         2   1        F             no mols
-      6165     delete         2   1        F             no mols
-      6166     delete         2   1        F             no mols
-      6167     delete         2   1        F             no mols
-      6172     delete         2   1        F             no mols
-      6174     delete         2   1        F             no mols
-      6177     delete         2   1        F             no mols
-      6186     delete         2   1        F             no mols
-      6190     delete         2   1        F             no mols
+      6144     delete         2   1        F             no mols
+      6146     delete         2   1        F             no mols
+      6155     delete         2   1        F             no mols
+      6164     delete         2   1        F             no mols
+      6183     delete         2   1        F             no mols
       6211     delete         2   1        F             no mols
-      6213     delete         2   1        F             no mols
-      6229     delete         2   1        F             no mols
-      6243     delete         2   1        F             no mols
-      6244     delete         2   1        F             no mols
-      6264     delete         2   1        F             no mols
-      6292     delete         2   1        F             no mols
-      6297     delete         2   1        F             no mols
-      6317     delete         2   1        F             no mols
-      6357     delete         2   1        F             no mols
-      6366     delete         2   1        F             no mols
-      6374     delete         2   1        F             no mols
+      6220     delete         2   1        F             no mols
+      6257     delete         2   1        F             no mols
+      6260     delete         2   1        F             no mols
+      6266     delete         2   1        F             no mols
+      6279     delete         2   1        F             no mols
+      6281     delete         2   1        F             no mols
+      6313     delete         2   1        F             no mols
+      6320     delete         2   1        F             no mols
+      6338     delete         2   1        F             no mols
+      6342     delete         2   1        F             no mols
+      6344     delete         2   1        F             no mols
+      6346     delete         2   1        F             no mols
+      6352     delete         2   1        F             no mols
+      6353     delete         2   1        F             no mols
       6378     delete         2   1        F             no mols
+      6379     delete         2   1        F             no mols
+      6382     delete         2   1        F             no mols
+      6384     delete         2   1        F             no mols
       6388     delete         2   1        F             no mols
       6394     delete         2   1        F             no mols
-      6395     delete         2   1        F             no mols
-      6396     delete         2   1        F             no mols
-      6397     delete         2   1        F             no mols
-      6398     delete         2   1        F             no mols
-      6415     delete         2   1        F             no mols
-      6417     delete         2   1        F             no mols
-      6420     delete         2   1        F             no mols
-      6442     delete         2   1        F             no mols
-      6451     delete         2   1        F             no mols
-      6456     delete         2   1        F             no mols
-      6470     delete         2   1        F             no mols
+      6402     delete         2   1        F             no mols
+      6407     delete         2   1        F             no mols
+      6424     delete         2   1        F             no mols
+      6444     delete         2   1        F             no mols
+      6457     delete         2   1        F             no mols
+      6469     delete         2   1        F             no mols
       6475     delete         2   1        F             no mols
-      6478     delete         2   1        F             no mols
-      6490     delete         2   1        F             no mols
-      6502     delete         2   1        F             no mols
-      6520     delete         2   1        F             no mols
-      6540     delete         2   1        F             no mols
-      6543     delete         2   1        F             no mols
-      6548     delete         2   1        F             no mols
-      6552     delete         2   1        F             no mols
-      6560     delete         2   1        F             no mols
-      6576     delete         2   1        F             no mols
-      6586     delete         2   1        F             no mols
-      6589     delete         2   1        F             no mols
-      6594     delete         2   1        F             no mols
-      6617     delete         2   1        F             no mols
-      6645     delete         2   1        F             no mols
-      6656     delete         2   1        F             no mols
-      6658     delete         2   1        F             no mols
-      6665     delete         2   1        F             no mols
-      6690     delete         2   1        F             no mols
+      6487     delete         2   1        F             no mols
+      6499     delete         2   1        F             no mols
+      6510     delete         2   1        F             no mols
+      6513     delete         2   1        F             no mols
+      6518     delete         2   1        F             no mols
+      6530     delete         2   1        F             no mols
+      6534     delete         2   1        F             no mols
+      6588     delete         2   1        F             no mols
+      6591     delete         2   1        F             no mols
+      6595     delete         2   1        F             no mols
+      6607     delete         2   1        F             no mols
+      6613     delete         2   1        F             no mols
+      6625     delete         2   1        F             no mols
+      6640     delete         2   1        F             no mols
+      6644     delete         2   1        F             no mols
+      6664     delete         2   1        F             no mols
+      6683     delete         2   1        F             no mols
       6699     delete         2   1        F             no mols
-      6707     delete         2   1        F             no mols
-      6730     delete         2   1        F             no mols
-      6740     delete         2   1        F             no mols
+      6708     delete         2   1        F             no mols
+      6714     delete         2   1        F             no mols
+      6738     delete         2   1        F             no mols
+      6743     delete         2   1        F             no mols
+      6750     delete         2   1        F             no mols
+      6758     delete         2   1        F             no mols
+      6761     delete         2   1        F             no mols
       6767     delete         2   1        F             no mols
-      6779     delete         2   1        F             no mols
+      6770     delete         2   1        F             no mols
       6788     delete         2   1        F             no mols
-      6790     delete         2   1        F             no mols
-      6799     delete         2   1        F             no mols
-      6801     delete         2   1        F             no mols
-      6815     delete         2   1        F             no mols
-      6832     delete         2   1        F             no mols
-      6838     delete         2   1        F             no mols
-      6841     delete         2   1        F             no mols
+      6792     delete         2   1        F             no mols
+      6793     delete         2   1        F             no mols
+      6797     delete         2   1        F             no mols
       6846     delete         2   1        F             no mols
-      6849     delete         2   1        F             no mols
-      6856     delete         2   1        F             no mols
-      6862     delete         2   1        F             no mols
-      6864     delete         2   1        F             no mols
-      6867     delete         2   1        F             no mols
-      6875     delete         2   1        F             no mols
-      6892     delete         2   1        F             no mols
-      6898     delete         2   1        F             no mols
+      6852     delete         2   1        F             no mols
+      6895     delete         2   1        F             no mols
+      6902     delete         2   1        F             no mols
       6914     delete         2   1        F             no mols
-      6929     delete         2   1        F             no mols
-      6930     delete         2   1        F             no mols
-      6934     delete         2   1        F             no mols
-      6935     delete         2   1        F             no mols
-      6956     delete         2   1        F             no mols
-      6996     delete         2   1        F             no mols
-      7009     delete         2   1        F             no mols
-      7011     delete         2   1        F             no mols
-      7020     delete         2   1        F             no mols
-      7039     delete         2   1        F             no mols
-      7051     delete         2   1        F             no mols
-      7067     delete         2   1        F             no mols
+      6917     delete         2   1        F             no mols
+      6931     delete         2   1        F             no mols
+      6932     delete         2   1        F             no mols
+      6937     delete         2   1        F             no mols
+      6954     delete         2   1        F             no mols
+      6957     delete         2   1        F             no mols
+      6969     delete         2   1        F             no mols
+      6973     delete         2   1        F             no mols
+      6978     delete         2   1        F             no mols
+      6981     delete         2   1        F             no mols
+      6990     delete         2   1        F             no mols
+      6999     delete         2   1        F             no mols
+      7005     delete         2   1        F             no mols
+      7030     delete         2   1        F             no mols
+      7033     delete         2   1        F             no mols
+      7053     delete         2   1        F             no mols
       7083     delete         2   1        F             no mols
-      7084     delete         2   1        F             no mols
-      7090     delete         2   1        F             no mols
-      7113     delete         2   1        F             no mols
-      7117     delete         2   1        F             no mols
-      7129     delete         2   1        F             no mols
-      7146     delete         2   1        F             no mols
-      7162     delete         2   1        F             no mols
-      7165     delete         2   1        F             no mols
-      7170     delete         2   1        F             no mols
+      7088     delete         2   1        F             no mols
+      7103     delete         2   1        F             no mols
+      7118     delete         2   1        F             no mols
+      7119     delete         2   1        F             no mols
+      7130     delete         2   1        F             no mols
+      7132     delete         2   1        F             no mols
+      7151     delete         2   1        F             no mols
+      7174     delete         2   1        F             no mols
+      7181     delete         2   1        F             no mols
       7182     delete         2   1        F             no mols
-      7183     delete         2   1        F             no mols
-      7189     delete         2   1        F             no mols
-      7190     delete         2   1        F             no mols
-      7208     delete         2   1        F             no mols
+      7217     delete         2   1        F             no mols
+      7218     delete         2   1        F             no mols
       7224     delete         2   1        F             no mols
-      7232     delete         2   1        F             no mols
       7233     delete         2   1        F             no mols
-      7236     delete         2   1        F             no mols
+      7234     delete         2   1        F             no mols
+      7245     delete         2   1        F             no mols
       7247     delete         2   1        F             no mols
-      7268     delete         2   1        F             no mols
-      7271     delete         2   1        F             no mols
-      7275     delete         2   1        F             no mols
-      7277     delete         2   1        F             no mols
-      7279     delete         2   1        F             no mols
-      7288     delete         2   1        F             no mols
-      7294     delete         2   1        F             no mols
-      7300     delete         2   1        F             no mols
-      7305     delete         2   1        F             no mols
+      7248     delete         2   1        F             no mols
+      7257     delete         2   1        F             no mols
+      7269     delete         2   1        F             no mols
+      7285     delete         2   1        F             no mols
+      7311     delete         2   1        F             no mols
+      7330     delete         2   1        F             no mols
+      7333     delete         2   1        F             no mols
+      7336     delete         2   1        F             no mols
+      7344     delete         2   1        F             no mols
       7345     delete         2   1        F             no mols
-      7365     delete         2   1        F             no mols
-      7372     delete         2   1        F             no mols
-      7383     delete         2   1        F             no mols
-      7404     delete         2   1        F             no mols
-      7414     delete         2   1        F             no mols
-      7425     delete         2   1        F             no mols
-      7428     delete         2   1        F             no mols
-      7429     delete         2   1        F             no mols
-      7451     delete         2   1        F             no mols
-      7463     delete         2   1        F             no mols
-      7475     delete         2   1        F             no mols
-      7476     delete         2   1        F             no mols
-      7487     delete         2   1        F             no mols
-      7494     delete         2   1        F             no mols
-      7500     delete         2   1        F             no mols
-      7519     delete         2   1        F             no mols
-      7549     delete         2   1        F             no mols
-      7551     delete         2   1        F             no mols
-      7559     delete         2   1        F             no mols
-      7560     delete         2   1        F             no mols
-      7594     delete         2   1        F             no mols
-      7599     delete         2   1        F             no mols
-      7618     delete         2   1        F             no mols
-      7640     delete         2   1        F             no mols
-      7642     delete         2   1        F             no mols
-      7660     delete         2   1        F             no mols
-      7675     delete         2   1        F             no mols
-      7680     delete         2   1        F             no mols
-      7696     delete         2   1        F             no mols
-      7715     delete         2   1        F             no mols
-      7720     delete         2   1        F             no mols
-      7723     delete         2   1        F             no mols
-      7730     delete         2   1        F             no mols
-      7733     delete         2   1        F             no mols
-      7772     delete         2   1        F             no mols
-      7773     delete         2   1        F             no mols
-      7775     delete         2   1        F             no mols
-      7786     delete         2   1        F             no mols
-      7788     delete         2   1        F             no mols
+      7350     delete         2   1        F             no mols
+      7357     delete         2   1        F             no mols
+      7358     delete         2   1        F             no mols
+      7361     delete         2   1        F             no mols
+      7380     delete         2   1        F             no mols
+      7382     delete         2   1        F             no mols
+      7388     delete         2   1        F             no mols
+      7407     delete         2   1        F             no mols
+      7412     delete         2   1        F             no mols
+      7415     delete         2   1        F             no mols
+      7434     delete         2   1        F             no mols
+      7446     delete         2   1        F             no mols
+      7450     delete         2   1        F             no mols
+      7452     delete         2   1        F             no mols
+      7453     delete         2   1        F             no mols
+      7457     delete         2   1        F             no mols
+      7458     delete         2   1        F             no mols
+      7466     delete         2   1        F             no mols
+      7473     delete         2   1        F             no mols
+      7480     delete         2   1        F             no mols
+      7481     delete         2   1        F             no mols
+      7491     delete         2   1        F             no mols
+      7510     delete         2   1        F             no mols
+      7511     delete         2   1        F             no mols
+      7522     delete         2   1        F             no mols
+      7525     delete         2   1        F             no mols
+      7535     delete         2   1        F             no mols
+      7540     delete         2   1        F             no mols
+      7550     delete         2   1        F             no mols
+      7563     delete         2   1        F             no mols
+      7575     delete         2   1        F             no mols
+      7576     delete         2   1        F             no mols
+      7596     delete         2   1        F             no mols
+      7606     delete         2   1        F             no mols
+      7615     delete         2   1        F             no mols
+      7626     delete         2   1        F             no mols
+      7628     delete         2   1        F             no mols
+      7643     delete         2   1        F             no mols
+      7653     delete         2   1        F             no mols
+      7659     delete         2   1        F             no mols
+      7667     delete         2   1        F             no mols
+      7672     delete         2   1        F             no mols
+      7673     delete         2   1        F             no mols
+      7682     delete         2   1        F             no mols
+      7689     delete         2   1        F             no mols
+      7713     delete         2   1        F             no mols
+      7719     delete         2   1        F             no mols
+      7724     delete         2   1        F             no mols
+      7728     delete         2   1        F             no mols
+      7734     delete         2   1        F             no mols
+      7748     delete         2   1        F             no mols
+      7749     delete         2   1        F             no mols
+      7757     delete         2   1        F             no mols
+      7776     delete         2   1        F             no mols
+      7782     delete         2   1        F             no mols
+      7783     delete         2   1        F             no mols
       7795     delete         2   1        F             no mols
-      7797     delete         2   1        F             no mols
-      7801     delete         2   1        F             no mols
-      7802     delete         2   1        F             no mols
-      7803     delete         2   1        F             no mols
-      7804     delete         2   1        F             no mols
-      7807     delete         2   1        F             no mols
-      7811     delete         2   1        F             no mols
-      7817     delete         2   1        F             no mols
-      7820     delete         2   1        F             no mols
-      7827     delete         2   1        F             no mols
-      7829     delete         2   1        F             no mols
-      7868     delete         2   1        F             no mols
-      7872     delete         2   1        F             no mols
-      7900     delete         2   1        F             no mols
-      7908     delete         2   1        F             no mols
-      7933     delete         2   1        F             no mols
-      7948     delete         2   1        F             no mols
-      7956     delete         2   1        F             no mols
-      7957     delete         2   1        F             no mols
-      7962     delete         2   1        F             no mols
-      7976     delete         2   1        F             no mols
-      7977     delete         2   1        F             no mols
-      7980     delete         2   1        F             no mols
-      7992     delete         2   1        F             no mols
-      7995     delete         2   1        F             no mols
-      8013     delete         2   1        F             no mols
-      8021     delete         2   1        F             no mols
-      8028     delete         2   1        F             no mols
-      8034     delete         2   1        F             no mols
-      8053     delete         2   1        F             no mols
-      8055     delete         2   1        F             no mols
-      8057     delete         2   1        F             no mols
-      8067     delete         2   1        F             no mols
-      8076     delete         2   1        F             no mols
+      7812     delete         2   1        F             no mols
+      7819     delete         2   1        F             no mols
+      7842     delete         2   1        F             no mols
+      7845     delete         2   1        F             no mols
+      7861     delete         2   1        F             no mols
+      7865     delete         2   1        F             no mols
+      7883     delete         2   1        F             no mols
+      7892     delete         2   1        F             no mols
+      7899     delete         2   1        F             no mols
+      7918     delete         2   1        F             no mols
+      7920     delete         2   1        F             no mols
+      7938     delete         2   1        F             no mols
+      7950     delete         2   1        F             no mols
+      7955     delete         2   1        F             no mols
+      7967     delete         2   1        F             no mols
+      7970     delete         2   1        F             no mols
+      7990     delete         2   1        F             no mols
+      7993     delete         2   1        F             no mols
+      7996     delete         2   1        F             no mols
+      7997     delete         2   1        F             no mols
+      7998     delete         2   1        F             no mols
+      7999     delete         2   1        F             no mols
+      8020     delete         2   1        F             no mols
+      8054     delete         2   1        F             no mols
+      8071     delete         2   1        F             no mols
       8087     delete         2   1        F             no mols
       8088     delete         2   1        F             no mols
+      8091     delete         2   1        F             no mols
       8098     delete         2   1        F             no mols
-      8101     delete         2   1        F             no mols
-      8102     delete         2   1        F             no mols
-      8115     delete         2   1        F             no mols
-      8117     delete         2   1        F             no mols
-      8126     delete         2   1        F             no mols
-      8132     delete         2   1        F             no mols
-      8141     delete         2   1        F             no mols
+      8112     delete         2   1        F             no mols
+      8124     delete         2   1        F             no mols
+      8129     delete         2   1        F             no mols
       8144     delete         2   1        F             no mols
-      8155     delete         2   1        F             no mols
-      8156     delete         2   1        F             no mols
-      8162     delete         2   1        F             no mols
-      8165     delete         2   1        F             no mols
-      8168     delete         2   1        F             no mols
-      8172     delete         2   1        F             no mols
-      8177     delete         2   1        F             no mols
-      8179     delete         2   1        F             no mols
-      8181     delete         2   1        F             no mols
-      8186     delete         2   1        F             no mols
-      8190     delete         2   1        F             no mols
-      8193     delete         2   1        F             no mols
-      8218     delete         2   1        F             no mols
-      8226     delete         2   1        F             no mols
-      8227     delete         2   1        F             no mols
-      8228     delete         2   1        F             no mols
-      8245     delete         2   1        F             no mols
-      8264     delete         2   1        F             no mols
-      8271     delete         2   1        F             no mols
-      8280     delete         2   1        F             no mols
-      8285     delete         2   1        F             no mols
+      8146     delete         2   1        F             no mols
+      8148     delete         2   1        F             no mols
+      8185     delete         2   1        F             no mols
+      8191     delete         2   1        F             no mols
+      8209     delete         2   1        F             no mols
+      8221     delete         2   1        F             no mols
+      8237     delete         2   1        F             no mols
+      8242     delete         2   1        F             no mols
+      8252     delete         2   1        F             no mols
+      8290     delete         2   1        F             no mols
       8304     delete         2   1        F             no mols
-      8308     delete         2   1        F             no mols
-      8315     delete         2   1        F             no mols
-      8328     delete         2   1        F             no mols
-      8331     delete         2   1        F             no mols
-      8335     delete         2   1        F             no mols
-      8350     delete         2   1        F             no mols
-      8356     delete         2   1        F             no mols
-      8358     delete         2   1        F             no mols
-      8414     delete         2   1        F             no mols
-      8426     delete         2   1        F             no mols
-      8428     delete         2   1        F             no mols
-      8444     delete         2   1        F             no mols
-      8456     delete         2   1        F             no mols
-      8465     delete         2   1        F             no mols
-      8474     delete         2   1        F             no mols
-      8483     delete         2   1        F             no mols
+      8329     delete         2   1        F             no mols
+      8338     delete         2   1        F             no mols
+      8341     delete         2   1        F             no mols
+      8352     delete         2   1        F             no mols
+      8378     delete         2   1        F             no mols
+      8381     delete         2   1        F             no mols
+      8383     delete         2   1        F             no mols
+      8402     delete         2   1        F             no mols
+      8403     delete         2   1        F             no mols
+      8448     delete         2   1        F             no mols
+      8455     delete         2   1        F             no mols
+      8457     delete         2   1        F             no mols
+      8464     delete         2   1        F             no mols
       8491     delete         2   1        F             no mols
-      8503     delete         2   1        F             no mols
-      8504     delete         2   1        F             no mols
-      8533     delete         2   1        F             no mols
-      8546     delete         2   1        F             no mols
-      8547     delete         2   1        F             no mols
-      8548     delete         2   1        F             no mols
-      8557     delete         2   1        F             no mols
-      8558     delete         2   1        F             no mols
-      8568     delete         2   1        F             no mols
-      8576     delete         2   1        F             no mols
-      8577     delete         2   1        F             no mols
-      8584     delete         2   1        F             no mols
-      8593     delete         2   1        F             no mols
-      8644     delete         2   1        F             no mols
+      8499     delete         2   1        F             no mols
+      8502     delete         2   1        F             no mols
+      8523     delete         2   1        F             no mols
+      8527     delete         2   1        F             no mols
+      8581     delete         2   1        F             no mols
+      8595     delete         2   1        F             no mols
+      8598     delete         2   1        F             no mols
+      8603     delete         2   1        F             no mols
+      8608     delete         2   1        F             no mols
+      8615     delete         2   1        F             no mols
+      8624     delete         2   1        F             no mols
+      8637     delete         2   1        F             no mols
+      8647     delete         2   1        F             no mols
+      8656     delete         2   1        F             no mols
       8667     delete         2   1        F             no mols
       8670     delete         2   1        F             no mols
-      8673     delete         2   1        F             no mols
-      8700     delete         2   1        F             no mols
-      8705     delete         2   1        F             no mols
-      8717     delete         2   1        F             no mols
-      8723     delete         2   1        F             no mols
-      8730     delete         2   1        F             no mols
-      8737     delete         2   1        F             no mols
-      8738     delete         2   1        F             no mols
-      8750     delete         2   1        F             no mols
+      8675     delete         2   1        F             no mols
+      8686     delete         2   1        F             no mols
+      8702     delete         2   1        F             no mols
+      8713     delete         2   1        F             no mols
+      8715     delete         2   1        F             no mols
+      8736     delete         2   1        F             no mols
+      8744     delete         2   1        F             no mols
+      8753     delete         2   1        F             no mols
       8756     delete         2   1        F             no mols
-      8759     delete         2   1        F             no mols
-      8774     delete         2   1        F             no mols
-      8804     delete         2   1        F             no mols
-      8808     delete         2   1        F             no mols
-      8809     delete         2   1        F             no mols
+      8763     delete         2   1        F             no mols
+      8784     delete         2   1        F             no mols
+      8806     delete         2   1        F             no mols
       8812     delete         2   1        F             no mols
-      8828     delete         2   1        F             no mols
-      8829     delete         2   1        F             no mols
-      8850     delete         2   1        F             no mols
-      8853     delete         2   1        F             no mols
-      8855     delete         2   1        F             no mols
-      8858     delete         2   1        F             no mols
-      8882     delete         2   1        F             no mols
-      8893     delete         2   1        F             no mols
-      8908     delete         2   1        F             no mols
-      8910     delete         2   1        F             no mols
-      8912     delete         2   1        F             no mols
-      8913     delete         2   1        F             no mols
-      8916     delete         2   1        F             no mols
-      8925     delete         2   1        F             no mols
-      8927     delete         2   1        F             no mols
-      8966     delete         2   1        F             no mols
-      8980     delete         2   1        F             no mols
-      8984     delete         2   1        F             no mols
-      8986     delete         2   1        F             no mols
-      8995     delete         2   1        F             no mols
-      9022     delete         2   1        F             no mols
+      8819     delete         2   1        F             no mols
+      8823     delete         2   1        F             no mols
+      8838     delete         2   1        F             no mols
+      8854     delete         2   1        F             no mols
+      8878     delete         2   1        F             no mols
+      8904     delete         2   1        F             no mols
+      8934     delete         2   1        F             no mols
+      8951     delete         2   1        F             no mols
+      8964     delete         2   1        F             no mols
+      8975     delete         2   1        F             no mols
+      8987     delete         2   1        F             no mols
+      8996     delete         2   1        F             no mols
+      8998     delete         2   1        F             no mols
+      9000     delete         2   1        F             no mols
+      9004     delete         2   1        F             no mols
+      9008     delete         2   1        F             no mols
+      9012     delete         2   1        F             no mols
+      9019     delete         2   1        F             no mols
       9024     delete         2   1        F             no mols
-      9045     delete         2   1        F             no mols
-      9082     delete         2   1        F             no mols
+      9030     delete         2   1        F             no mols
+      9033     delete         2   1        F             no mols
+      9064     delete         2   1        F             no mols
       9085     delete         2   1        F             no mols
-      9091     delete         2   1        F             no mols
-      9114     delete         2   1        F             no mols
-      9127     delete         2   1        F             no mols
-      9131     delete         2   1        F             no mols
-      9137     delete         2   1        F             no mols
-      9141     delete         2   1        F             no mols
+      9086     delete         2   1        F             no mols
+      9089     delete         2   1        F             no mols
+      9097     delete         2   1        F             no mols
+      9102     delete         2   1        F             no mols
       9151     delete         2   1        F             no mols
-      9162     delete         2   1        F             no mols
-      9173     delete         2   1        F             no mols
-      9186     delete         2   1        F             no mols
-      9197     delete         2   1        F             no mols
-      9217     delete         2   1        F             no mols
-      9219     delete         2   1        F             no mols
+      9163     delete         2   1        F             no mols
+      9169     delete         2   1        F             no mols
+      9184     delete         2   1        F             no mols
+      9187     delete         2   1        F             no mols
+      9203     delete         2   1        F             no mols
+      9213     delete         2   1        F             no mols
+      9236     delete         2   1        F             no mols
       9243     delete         2   1        F             no mols
-      9256     delete         2   1        F             no mols
-      9259     delete         2   1        F             no mols
-      9282     delete         2   1        F             no mols
-      9291     delete         2   1        F             no mols
-      9300     delete         2   1        F             no mols
-      9308     delete         2   1        F             no mols
-      9310     delete         2   1        F             no mols
+      9267     delete         2   1        F             no mols
+      9280     delete         2   1        F             no mols
+      9288     delete         2   1        F             no mols
+      9323     delete         2   1        F             no mols
+      9325     delete         2   1        F             no mols
+      9358     delete         2   1        F             no mols
+      9368     delete         2   1        F             no mols
+      9382     delete         2   1        F             no mols
       9385     delete         2   1        F             no mols
-      9388     delete         2   1        F             no mols
-      9415     delete         2   1        F             no mols
-      9419     delete         2   1        F             no mols
-      9425     delete         2   1        F             no mols
-      9432     delete         2   1        F             no mols
-      9433     delete         2   1        F             no mols
-      9437     delete         2   1        F             no mols
-      9453     delete         2   1        F             no mols
-      9483     delete         2   1        F             no mols
-      9488     delete         2   1        F             no mols
+      9449     delete         2   1        F             no mols
+      9450     delete         2   1        F             no mols
+      9452     delete         2   1        F             no mols
+      9458     delete         2   1        F             no mols
+      9459     delete         2   1        F             no mols
+      9461     delete         2   1        F             no mols
+      9482     delete         2   1        F             no mols
+      9487     delete         2   1        F             no mols
       9489     delete         2   1        F             no mols
-      9506     delete         2   1        F             no mols
-      9522     delete         2   1        F             no mols
-      9535     delete         2   1        F             no mols
-      9539     delete         2   1        F             no mols
-      9541     delete         2   1        F             no mols
-      9559     delete         2   1        F             no mols
-      9566     delete         2   1        F             no mols
-      9592     delete         2   1        F             no mols
-      9599     delete         2   1        F             no mols
-      9606     delete         2   1        F             no mols
-      9611     delete         2   1        F             no mols
-      9617     delete         2   1        F             no mols
-      9628     delete         2   1        F             no mols
-      9634     delete         2   1        F             no mols
-      9638     delete         2   1        F             no mols
-      9658     delete         2   1        F             no mols
-      9660     delete         2   1        F             no mols
-      9673     delete         2   1        F             no mols
-      9679     delete         2   1        F             no mols
-      9696     delete         2   1        F             no mols
+      9491     delete         2   1        F             no mols
+      9502     delete         2   1        F             no mols
+      9545     delete         2   1        F             no mols
+      9547     delete         2   1        F             no mols
+      9549     delete         2   1        F             no mols
+      9554     delete         2   1        F             no mols
+      9564     delete         2   1        F             no mols
+      9570     delete         2   1        F             no mols
+      9571     delete         2   1        F             no mols
+      9572     delete         2   1        F             no mols
+      9576     delete         2   1        F             no mols
+      9590     delete         2   1        F             no mols
+      9597     delete         2   1        F             no mols
+      9637     delete         2   1        F             no mols
+      9656     delete         2   1        F             no mols
+      9664     delete         2   1        F             no mols
+      9671     delete         2   1        F             no mols
+      9678     delete         2   1        F             no mols
+      9681     delete         2   1        F             no mols
+      9694     delete         2   1        F             no mols
+      9705     delete         2   1        F             no mols
       9710     delete         2   1        F             no mols
-      9714     delete         2   1        F             no mols
-      9730     delete         2   1        F             no mols
+      9719     delete         2   1        F             no mols
+      9725     delete         2   1        F             no mols
+      9733     delete         2   1        F             no mols
+      9741     delete         2   1        F             no mols
+      9750     delete         2   1        F             no mols
       9758     delete         2   1        F             no mols
-      9763     delete         2   1        F             no mols
-      9774     delete         2   1        F             no mols
-      9778     delete         2   1        F             no mols
-      9783     delete         2   1        F             no mols
-      9785     delete         2   1        F             no mols
-      9808     delete         2   1        F             no mols
-      9813     delete         2   1        F             no mols
-      9816     delete         2   1        F             no mols
-      9843     delete         2   1        F             no mols
-      9863     delete         2   1        F             no mols
+      9769     delete         2   1        F             no mols
+      9781     delete         2   1        F             no mols
+      9795     delete         2   1        F             no mols
+      9802     delete         2   1        F             no mols
+      9814     delete         2   1        F             no mols
+      9824     delete         2   1        F             no mols
+      9830     delete         2   1        F             no mols
+      9849     delete         2   1        F             no mols
+      9872     delete         2   1        F             no mols
       9877     delete         2   1        F             no mols
-      9891     delete         2   1        F             no mols
-      9894     delete         2   1        F             no mols
+      9889     delete         2   1        F             no mols
+      9893     delete         2   1        F             no mols
+      9899     delete         2   1        F             no mols
+      9901     delete         2   1        F             no mols
+      9905     delete         2   1        F             no mols
+      9910     delete         2   1        F             no mols
+      9913     delete         2   1        F             no mols
+      9927     delete         2   1        F             no mols
+      9945     delete         2   1        F             no mols
+      9960     delete         2   1        F             no mols
       9984     delete         2   1        F             no mols
       9986     delete         2   1        F             no mols
-      9999     delete         2   1        F             no mols
+      9987     delete         2   1        F             no mols
+      9997     delete         2   1        F             no mols
 ********************************************************************************
 
 Energy of final configuration
@@ -1320,7 +1349,7 @@ Energy of final configuration
 
  Energy components for box 1     kJ/mol-Extensive       Relative_Error
  ---------------------------------------------------------------------
- Total system energy          152977900017183.062            0.000E+00
+ Total system energy          254551436987856.125            0.000E+00
  Intra molecular energy                     0.000            0.000E+00
    Bond energy                              0.000            0.000E+00
    Bond angle energy                        0.000            0.000E+00
@@ -1328,9 +1357,9 @@ Energy of final configuration
    Improper angle energy                    0.000            0.000E+00
    Intra molecule vdw                       0.000            0.000E+00
    Intra molecule q                         0.000            0.000E+00
- Inter molecular energy       152977900017183.062            0.000E+00
+ Inter molecular energy       254551436987856.125            0.000E+00
    Inter molecule vdw                       0.000            0.000E+00
-   Long range correction      152977900017183.062            0.000E+00
+   Long range correction      254551436987856.125            0.000E+00
    Inter molecule q                         0.000            0.000E+00
  ---------------------------------------------------------------------
 
@@ -1351,18 +1380,18 @@ Writing information for box  1
    Writing information for species  2
 
                 Move      Trials     Success   % Success
-              Insert        1008           0        0.00
+              Insert        1024           0        0.00
    ---------------------------------------------------------
 
 ********************************************************************************
 
  Writing information about subroutine times
 ********************************************************************************
- Translation time =            0.000817 secs.
- Rotation time =               0.000402 secs.
- Insertion time =              0.690584 secs.
- Deletion time =               0.002512 secs.
- Regrowth time =               0.000857 secs.
+ Translation time =            0.000746 secs.
+ Rotation time =               0.000399 secs.
+ Insertion time =              0.733575 secs.
+ Deletion time =               0.002628 secs.
+ Regrowth time =               0.000786 secs.
 ********************************************************************************
 
 ********************************************************************************
@@ -1377,5 +1406,5 @@ Writing information for box  1
          0      Hours
          0    Minutes
         16    Seconds
-       718         ms
+       632         ms
 ********************************************************************************
