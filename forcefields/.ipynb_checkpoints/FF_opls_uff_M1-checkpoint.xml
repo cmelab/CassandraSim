@@ -1,0 +1,19 @@
+<ForceField>
+ <AtomTypes>
+  <Type name="O" class="O" element="O" mass="15.9990"  def="O" desc="uff_O: oxygen, all geometries" doi="10.1021/ja00051a040"/>
+  <Type name="Te" class="TE" element="Te" mass="127.60000"  def="Te" desc="uff_Te: Tetrahedral Te2+" doi="10.1021/ja00051a040"/>
+  <Type name="Nb" class="NB" element="Nb" mass="92.90638"  def="Nb" desc="uff_Nb: Tetrahedral Nb5+" doi="10.1021/ja00051a040"/>
+  <Type name="Mo" class="TE" element="Te" mass="95.94000"  def="Mo" desc="uff_Mo: Tetrahedral Mo6+" doi="10.1021/ja00051a040"/>
+  <Type name="V" class="V" element="V" mass="50.9415"  def="V" desc="uff_V: Tetrahedral V5+" doi="10.1021/ja00051a040"/>
+ </AtomTypes>
+ <HarmonicBondForce>
+  <Bond class1="O" class2="O" length="0.1208" k="300000.0"/>
+ </HarmonicBondForce>
+ <NonbondedForce coulomb14scale="0.5" lj14scale="0.5">
+  <Atom type="O" charge="0.00" sigma="0.3115" epsilon="0.25104"/>
+  <Atom type="Te" charge="0.00" sigma="0.3980" epsilon="1.665232"/>
+  <Atom type="Nb" charge="0.00" sigma="0.2817" epsilon="0.246856"/>
+  <Atom type="Mo" charge="0.00" sigma="0.2716" epsilon="0.234304"/>
+  <Atom type="V" charge="0.00" sigma="0.2798" epsilon="0.066944"/>
+ </NonbondedForce>
+</ForceField>
