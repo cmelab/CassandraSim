@@ -135,3 +135,4 @@ output*
 *.in.*
 *.out*
 *.o*
+*.rc*
