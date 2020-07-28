@@ -130,6 +130,7 @@ dmypy.json
 
 # Ignore cassandra output files
 species*
+output*
 *.inp*
 *.in.*
 *.out*
