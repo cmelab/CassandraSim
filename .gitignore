@@ -129,7 +129,10 @@ dmypy.json
 .pyre/
 
 # Ignore cassandra output files
-workspace*
+src/
+templates/
+archive/
+workspace/
 species*
 output*
 *.inp*
