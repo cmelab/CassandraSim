@@ -7,8 +7,8 @@ import signac
 def main():
     project = signac.init_project("MosCas")
     for T in [ 66, 151, 236, 321, 406, 492, 577, 662, 747, 833]:
-#        for chem_pot in [299]:
         for chem_pot in [0]:
+#        for chem_pot in [100,150,200,250,300,350,400,450,500,550,600]:
                 statepoint = dict(
                     chem_pot=chem_pot, T=T,
                 )
