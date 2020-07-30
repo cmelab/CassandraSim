@@ -61,7 +61,7 @@ def apply_ff(system, systemFF, organicFF=None):
                 typed_surface += typed_comp
     return typed_surface
 
-def run_cassandra_surf(chem_pot, temp,steps_run, steps_restart):
+def run_cassandra_surf(chem_pot, temp,steps_run):
     # Create sim box
     L = 10
     box = mb.Box(mins=[-L/2]*3, maxs=[L/2]*3)
@@ -111,13 +111,51 @@ def run_cassandra_surf(chem_pot, temp,steps_run, steps_restart):
         temperature=temp*u.K, 
         **custom_args
     )
+
     
-    # Set max translate and volume for production
+def restart_cassandra_surf(chem_pot, temp, steps_restart):
+    # Create sim box
+    L = 10
+    box = mb.Box(mins=[-L/2]*3, maxs=[L/2]*3)
+
+    # Create materials
+    surface = gen_system(dims=[1, 1, 2]) 
+    surface.periodicity = surface.periodicity + np.array([0,0,1.4-0.85032099]) # Make (14 in A, convert from nm), only room for an ethane
+    surface.translate_to([0,0,0]) # Centering
+    ethane = mb.load("CC", smiles=True)
+
+    # Load forcefields
+    opls_uff = foyer.forcefields.Forcefield(forcefield_files = '/home/erjank_project/nealeellyson/CassandraSim_signac/forcefields/FF_opls_uff.xml')
+    oplsaa = foyer.forcefields.load_OPLSAA()
+
+    # Use foyer to apply forcefields
+    typed_surface = apply_ff(surface, opls_uff)
+    typed_ethane = oplsaa.apply(ethane, assert_bond_params=False, assert_angle_params=False, 
+        assert_dihedral_params=False)
+    
+    # Create box and species list
+    box_list = [surface]
+    species_list = [typed_surface,typed_ethane]
+
+    # Since we have an occupied box we need to specify
+    # the number of each species present in the intial config
+    mols_in_boxes = [[2,0]]
+
+    system = mc.System(box_list, species_list, mols_in_boxes=mols_in_boxes)
+    moveset = mc.MoveSet("gcmc", species_list)
     moveset.max_translate = [[0* u.angstrom,10.0* u.angstrom]] # angstroms
 
-    # Update run_name and restart_name
-    custom_args["run_name"] = f"surfprod_{chem_pot:.0f}_{temp:.0f}"
-    custom_args["restart_name"] = f"surfequil_{chem_pot:.0f}_{temp:.0f}"
+    custom_args = {
+        "restart_name": f"surfequil_{chem_pot:.0f}_{temp:.0f}",
+        "run_name": f"surfprod_{chem_pot:.0f}_{temp:.0f}",
+        "chemical_potentials": ["none",chem_pot*u.Unit('kJ/mol')],
+        "rcut_min": 0.3980 * 2.5* u.angstrom, #(or 3.0)
+        "vdw_cutoff": min(box.lengths)/2.1* u.angstrom,
+        "charge_style": "none",
+        #"charge_cutoff": 14.0,
+        "coord_freq": 100,
+        "prop_freq": 10,
+    }
 
     mc.restart(
         system=system,
@@ -127,6 +165,7 @@ def run_cassandra_surf(chem_pot, temp,steps_run, steps_restart):
         temperature=temp*u.K,
         **custom_args,
     )
+    
 @FlowProject.operation
 @FlowProject.post.isfile("box1.in.xyz")
 def run_sim(job):
@@ -135,9 +174,11 @@ def run_sim(job):
 
         # Run simulation for spread of chemical potentials at set temperature
         run_cassandra_surf(job.sp.chem_pot,
-                           job.sp.T, 
-                           job.doc.steps_restart,
+                           job.sp.T,
                            job.doc.steps_run)
+        restart_cassandra_surf(job.sp.chem_pot,
+                           job.sp.T, 
+                           job.doc.steps_restart)
 
 if __name__ == '__main__':
     FlowProject().main()
