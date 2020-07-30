@@ -137,5 +137,4 @@ output*
 *.out*
 *.o*
 *.rc*
-.ipynb
 .json
