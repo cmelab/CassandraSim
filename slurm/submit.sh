@@ -9,5 +9,6 @@
 conda activate mc
 
 # PUT YOUR CODE IN HERE!
-python -u MosCas.py
+python -u MosCas.py "$@"
+
 

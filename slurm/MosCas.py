@@ -1,3 +1,4 @@
+import sys
 import mosdef_cassandra as mc
 import generate_mc as gen   # Chris' script
 import mbuild as mb
@@ -94,7 +95,7 @@ def run_cassandra_surf(chem_pot, temp):
         system=system, 
         moveset=moveset, 
         run_type="equilibration", 
-        run_length=10000, # 3600549, # To reach ~1.33 hours
+        run_length= 3600549, # To reach ~1.33 hours
         temperature=temp*u.K, 
         **custom_args
     )
@@ -110,7 +111,7 @@ def run_cassandra_surf(chem_pot, temp):
         system=system,
         moveset=moveset,
         run_type="production",
-        run_length= 50000, #24097256, # To reach ~6.67 hours, total 8 hrs
+        run_length= 24097256, # To reach ~6.67 hours, total 8 hrs
         temperature=temp*u.K,
         **custom_args,
     )
@@ -127,9 +128,8 @@ print(f"The unit temperature is {T:.0f} K")
 chem_pots = [i*T for i in range(0,10)] 
 temp = 2*T
 
-# Run simulation for spread of chemical potentials at set temperature
-run_cassandra_surf(0,temp)
+chem_pot = float(sys.argv[1])
+temp = float(sys.argv[2])
 
-#for chem_pot in chem_pots:
-#    run_cassandra_surf(chem_pot,temp)
-#    !rm -f box*xyz  # it won't overwrite the box...
+# Run simulation for spread of chemical potentials at set temperature
+run_cassandra_surf(chem_pot,temp)
