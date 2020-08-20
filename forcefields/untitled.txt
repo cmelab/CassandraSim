@@ -1,0 +1,3 @@
+  <Type name="opls_135" class="CT" element="C" mass="12.01100" def="[C;X4](C)(H)(H)H" desc="alkane CH3" doi="10.1021/ja9621760"/>
+
+  <Atom type="opls_135" charge="-0.18" sigma="0.35" epsilon="0.276144"/>
