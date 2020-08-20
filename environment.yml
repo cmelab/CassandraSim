@@ -21,3 +21,4 @@ dependencies:
   - jupyterlab
   - mosdef_cassandra
   - scipy
+  - signac
